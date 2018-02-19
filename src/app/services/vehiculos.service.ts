@@ -38,4 +38,13 @@ export class VehiculosService {
                           });
   }
 
+  getVehiculo(key$: string) {
+    const url = `${this.vehiculoUrl}/${key$}.json`;
+    return this.http.get(url)
+          .map( res => res.json() );
+  }
+  getVehiculos() {
+    return this.http.get(this.fireUrl)
+          .map( res => res.json() );
+  }
 }

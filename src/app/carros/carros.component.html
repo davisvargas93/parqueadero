@@ -13,14 +13,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                <tr *ngFor="let k of vehiculos | keys; let i = index">
+                    <th scope="row">{{ vehiculos[k].posicion }}</th>
+                    <td>{{ vehiculos[k].horaEntrada }}</td>
+                    <td>{{ vehiculos[k].horaSalida }}</td>
+                    <td>{{ vehiculos[k].fechaEntrada }}</td>
+                    <td>{{ vehiculos[k].fechaSalida }}</td>
+                    <td>{{ vehiculos[k].placa }}</td>
+                    <td>{{ vehiculos[k].marca }}</td>
                 </tr>
             </tbody>
         </table>

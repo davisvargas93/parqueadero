@@ -10,6 +10,7 @@ import { CarrosComponent } from './carros/carros.component';
 import { MotosComponent } from './motos/motos.component';
 import { VehiculosService } from './services/vehiculos.service';
 import { FormsModule } from '@angular/forms';
+import { KeysPipe } from './pipes/keys.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     ParqueaderosComponent,
     ParqueaderoComponent,
     CarrosComponent,
-    MotosComponent
+    MotosComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
