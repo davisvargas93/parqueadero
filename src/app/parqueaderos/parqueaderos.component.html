@@ -1,0 +1,10 @@
+<h1>Parqueaderos</h1>
+<hr>
+
+<div class="text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" [routerLinkActive]="['active']" [routerLink]="['carros']">Carros</button>
+        <button type="button" class="btn btn-secondary" [routerLinkActive]="['active']" [routerLink]="['motos']">Motos</button>
+    </div>
+    <router-outlet></router-outlet>
+</div>
